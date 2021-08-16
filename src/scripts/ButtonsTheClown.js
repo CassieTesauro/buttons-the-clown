@@ -1,4 +1,4 @@
-export const ButtonsTheClown = () => {  //15.
+export const ButtonsTheClown = () => {  //15. Requests() call :::AND::: //19. ServiceForm() call
     return `
         <h2>Buttons the Clown</h2>
 
