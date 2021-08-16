@@ -1,6 +1,7 @@
 const applicationState = { //12.
     requests: []
 }
+const mainContainer = document.querySelector("#container") //35.
 
 const API = "http://localhost:8088"  //7.
 
@@ -21,6 +22,7 @@ export const getRequests = () => {  //13. getter function definition
 }
 
 
+//BIRD'S EYE VIEW: sendRequest() 'posts' a user's submitted request (AKA new state object) to the API to be stored as permanent state.
 export const sendRequest = (userServiceRequest) => { //26.
     const fetchOptions = {  //27.
         method: "POST",  //28.
@@ -32,7 +34,7 @@ export const sendRequest = (userServiceRequest) => { //26.
     return fetch(`${API}/requests`, fetchOptions)  //31.
         .then(response => response.json())  //32.
         .then(() => {  //33.
-
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged")) //34.
         })
 }
 

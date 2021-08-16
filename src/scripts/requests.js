@@ -5,7 +5,7 @@ export const Requests = () => { //16.
     const requests = getRequests() //17.
     
     const requestListElement = (request) => {
-        return `<li>${request.description}</li>`
+        return `<li>${request.parentName}</li>`
     }
 
     let html = `
