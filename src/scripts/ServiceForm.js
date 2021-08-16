@@ -1,20 +1,28 @@
 export const ServiceForm  = () => { //20.
     let html = `
                 <div class="field">
-                    <label class="label" for="serviceDescription">Description</label>
-                    <input type="text" name="serviceDescription" class="input" />
+                    <label class="label" for="serviceParentName">Parent Name</label>
+                    <input type="text" name="serviceParentName" class="input" />
+                </div>
+                <div class="field">
+                    <label class="label" for="serviceChildName">Child Name</label>
+                    <input type="text" name="serviceChildName" class="input" />
+                </div>
+                <div class="field">
+                    <label class="label" for="serviceGroupSize">Group Size</label>
+                    <input type="number" name="serviceGroupSize" class="input" />
                 </div>
                 <div class="field">
                     <label class="label" for="serviceAddress">Address</label>
                     <input type="text" name="serviceAddress" class="input" />
                 </div>
                 <div class="field">
-                    <label class="label" for="serviceBudget">Budget</label>
-                    <input type="number" name="serviceBudget" class="input" />
-                </div>
-                <div class="field">
                     <label class="label" for="serviceDate">Date needed</label>
                     <input type="date" name="serviceDate" class="input" />
+                </div>
+                <div class="field">
+                    <label class="label" for="serviceHours">Hours</label>
+                    <input type="number" name="serviceHours" class="input" />
                 </div>
 
                 <button class="button" id="submitRequest">Submit Request</button>
