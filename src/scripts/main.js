@@ -12,3 +12,11 @@ const render = () => { //3.
 }
 
 render() //1.
+
+
+mainContainer.addEventListener(  //35. Rerenders based on new object submitted AKA posted to API AKA transient to permanent state
+    "stateChanged",
+    customEvent => {
+        render()
+    }
+)
