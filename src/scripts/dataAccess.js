@@ -38,3 +38,12 @@ export const sendRequest = (userServiceRequest) => { //26.
         })
 }
 
+
+export const deleteRequest = (id) => {  //38.  
+    return fetch(`${API}/requests/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+            } 
+        )
+}  

@@ -10,24 +10,6 @@
       "address": "1234 Aardvark Ave",
       "date": "2021-9-4",
       "hours": 3
-    },
-    {
-      "parentName": "Carl Carlson",
-      "childName": "Carol Carlson",
-      "groupSize": "6",
-      "address": "129 Canterbury Court",
-      "date": "2021-09-04",
-      "hours": "3",
-      "id": 2
-    },
-    {
-      "parentName": "Dawn Daniels",
-      "childName": "Danny Daniels",
-      "groupSize": "12",
-      "address": "9744 Daisy Dr.",
-      "date": "2021-09-09",
-      "hours": "2",
-      "id": 3
     }
   ]
 }
